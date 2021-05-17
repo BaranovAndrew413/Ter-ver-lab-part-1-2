@@ -1,10 +1,10 @@
 #pragma once
-#include<math.h>
-#include<stdio.h>
+#include <math.h>
+#include <stdio.h>
 #include"iostream"
 #include"ctime"
 #include<vector>
-#include<algorithm>
+#include <algorithm>
 
 std::vector<double> v;
 std::vector<double> v2;
@@ -108,13 +108,13 @@ namespace Graph {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^ legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->X = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->F_1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -181,7 +181,8 @@ namespace Graph {
 			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
 			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
 			this->dataGridView1->DefaultCellStyle = dataGridViewCellStyle2;
-			this->dataGridView1->Location = System::Drawing::Point(449, 11);
+			this->dataGridView1->Location = System::Drawing::Point(599, 13);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(4);
 			this->dataGridView1->Name = L"dataGridView1";
 			dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
 			dataGridViewCellStyle3->BackColor = System::Drawing::SystemColors::Control;
@@ -194,7 +195,7 @@ namespace Graph {
 			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this->dataGridView1->RowHeadersVisible = false;
 			this->dataGridView1->RowHeadersWidth = 51;
-			this->dataGridView1->Size = System::Drawing::Size(228, 271);
+			this->dataGridView1->Size = System::Drawing::Size(304, 334);
 			this->dataGridView1->TabIndex = 2;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellContentClick);
 			// 
@@ -226,20 +227,18 @@ namespace Graph {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(9, 10);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
+			this->pictureBox1->Location = System::Drawing::Point(12, 12);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(435, 272);
+			this->pictureBox1->Size = System::Drawing::Size(580, 335);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 10;
 			this->pictureBox1->TabStop = false;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(692, 288);
-			this->button1->Margin = System::Windows::Forms::Padding(2);
+			this->button1->Location = System::Drawing::Point(923, 355);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(117, 27);
+			this->button1->Size = System::Drawing::Size(156, 33);
 			this->button1->TabIndex = 12;
 			this->button1->Text = L"Calculate";
 			this->button1->UseVisualStyleBackColor = true;
@@ -248,60 +247,54 @@ namespace Graph {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(8, 304);
-			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label1->Location = System::Drawing::Point(10, 374);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(13, 13);
+			this->label1->Size = System::Drawing::Size(16, 17);
 			this->label1->TabIndex = 13;
 			this->label1->Text = L"n";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(24, 301);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1->Location = System::Drawing::Point(32, 371);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(76, 20);
+			this->textBox1->Size = System::Drawing::Size(100, 22);
 			this->textBox1->TabIndex = 14;
-			this->textBox1->Text = L"10";
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
+			this->textBox1->Text = "10";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(118, 304);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2->Location = System::Drawing::Point(158, 374);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(13, 13);
+			this->label2->Size = System::Drawing::Size(16, 17);
 			this->label2->TabIndex = 15;
-			this->label2->Text = L"a";
+			this->label2->Text = L"а";
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(135, 301);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2->Location = System::Drawing::Point(180, 371);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(76, 20);
+			this->textBox2->Size = System::Drawing::Size(100, 22);
 			this->textBox2->TabIndex = 16;
-			this->textBox2->Text = L"2";
 			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
+			this->textBox2->Text = "2";
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(239, 306);
-			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label3->Location = System::Drawing::Point(319, 376);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(65, 13);
+			this->label3->Size = System::Drawing::Size(87, 17);
 			this->label3->TabIndex = 17;
 			this->label3->Text = L"Right border";
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(309, 301);
-			this->textBox3->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3->Location = System::Drawing::Point(412, 371);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(76, 20);
+			this->textBox3->Size = System::Drawing::Size(100, 22);
 			this->textBox3->TabIndex = 18;
 			this->textBox3->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox3_TextChanged);
 			// 
@@ -312,12 +305,11 @@ namespace Graph {
 				this->Column2,
 					this->Column1, this->Column3, this->Column4, this->Column5, this->Column6, this->Column7, this->Column8
 			});
-			this->dataGridView2->Location = System::Drawing::Point(9, 326);
-			this->dataGridView2->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView2->Location = System::Drawing::Point(12, 401);
 			this->dataGridView2->Name = L"dataGridView2";
 			this->dataGridView2->RowHeadersWidth = 51;
 			this->dataGridView2->RowTemplate->Height = 24;
-			this->dataGridView2->Size = System::Drawing::Size(432, 62);
+			this->dataGridView2->Size = System::Drawing::Size(576, 76);
 			this->dataGridView2->TabIndex = 19;
 			// 
 			// Column2
@@ -378,8 +370,8 @@ namespace Graph {
 			// 
 			// zedGraphControl1
 			// 
-			this->zedGraphControl1->Location = System::Drawing::Point(449, 325);
-			this->zedGraphControl1->Margin = System::Windows::Forms::Padding(4);
+			this->zedGraphControl1->Location = System::Drawing::Point(599, 400);
+			this->zedGraphControl1->Margin = System::Windows::Forms::Padding(5);
 			this->zedGraphControl1->Name = L"zedGraphControl1";
 			this->zedGraphControl1->ScrollGrace = 0;
 			this->zedGraphControl1->ScrollMaxX = 0;
@@ -388,15 +380,16 @@ namespace Graph {
 			this->zedGraphControl1->ScrollMinX = 0;
 			this->zedGraphControl1->ScrollMinY = 0;
 			this->zedGraphControl1->ScrollMinY2 = 0;
-			this->zedGraphControl1->Size = System::Drawing::Size(565, 254);
+			this->zedGraphControl1->Size = System::Drawing::Size(753, 313);
 			this->zedGraphControl1->TabIndex = 20;
 			this->zedGraphControl1->Load += gcnew System::EventHandler(this, &MyForm::zedGraphControl1_Load);
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(859, 288);
+			this->button2->Location = System::Drawing::Point(1145, 355);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(142, 29);
+			this->button2->Size = System::Drawing::Size(189, 36);
 			this->button2->TabIndex = 21;
 			this->button2->Text = L"Draw";
 			this->button2->UseVisualStyleBackColor = true;
@@ -405,71 +398,63 @@ namespace Graph {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(398, 301);
-			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label4->Location = System::Drawing::Point(531, 371);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(15, 13);
+			this->label4->Size = System::Drawing::Size(18, 17);
 			this->label4->TabIndex = 22;
 			this->label4->Text = L"D";
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(416, 303);
-			this->textBox4->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4->Location = System::Drawing::Point(555, 373);
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(76, 20);
+			this->textBox4->Size = System::Drawing::Size(100, 22);
 			this->textBox4->TabIndex = 23;
 			this->textBox4->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox4_TextChanged);
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(112, 537);
-			this->textBox5->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5->Location = System::Drawing::Point(149, 661);
 			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(90, 20);
+			this->textBox5->Size = System::Drawing::Size(118, 22);
 			this->textBox5->TabIndex = 24;
 			this->textBox5->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox5_TextChanged);
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(9, 537);
-			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label6->Location = System::Drawing::Point(12, 661);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(91, 13);
+			this->label6->Size = System::Drawing::Size(123, 17);
 			this->label6->TabIndex = 26;
-			this->label6->Text = L"Р“СЂР°РЅРёС†С‹ РѕС‚СЂРµР·РєРѕРІ";
-			this->label6->Click += gcnew System::EventHandler(this, &MyForm::label6_Click);
+			this->label6->Text = L"Границы отрезка";
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(11, 560);
-			this->button3->Margin = System::Windows::Forms::Padding(2);
+			this->button3->Location = System::Drawing::Point(15, 689);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(88, 23);
+			this->button3->Size = System::Drawing::Size(117, 28);
 			this->button3->TabIndex = 28;
-			this->button3->Text = L"Р—Р°РґР°С‚СЊ";
+			this->button3->Text = L"Задать";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// dataGridView3
 			// 
 			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView3->Location = System::Drawing::Point(9, 392);
-			this->dataGridView3->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView3->Location = System::Drawing::Point(12, 483);
 			this->dataGridView3->Name = L"dataGridView3";
 			this->dataGridView3->RowHeadersWidth = 51;
 			this->dataGridView3->RowTemplate->Height = 24;
-			this->dataGridView3->Size = System::Drawing::Size(432, 129);
+			this->dataGridView3->Size = System::Drawing::Size(576, 159);
 			this->dataGridView3->TabIndex = 29;
 			this->dataGridView3->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView3_CellContentClick);
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(112, 560);
-			this->button4->Margin = System::Windows::Forms::Padding(2);
+			this->button4->Location = System::Drawing::Point(149, 689);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(88, 23);
+			this->button4->Size = System::Drawing::Size(118, 28);
 			this->button4->TabIndex = 30;
 			this->button4->Text = L"Show_Gtable";
 			this->button4->UseVisualStyleBackColor = true;
@@ -481,53 +466,48 @@ namespace Graph {
 			this->chart1->ChartAreas->Add(chartArea1);
 			legend1->Name = L"Legend1";
 			this->chart1->Legends->Add(legend1);
-			this->chart1->Location = System::Drawing::Point(682, 10);
-			this->chart1->Margin = System::Windows::Forms::Padding(2);
+			this->chart1->Location = System::Drawing::Point(910, 12);
 			this->chart1->Name = L"chart1";
 			series1->ChartArea = L"ChartArea1";
 			series1->Legend = L"Legend1";
 			series1->Name = L"Series1";
 			this->chart1->Series->Add(series1);
-			this->chart1->Size = System::Drawing::Size(332, 271);
+			this->chart1->Size = System::Drawing::Size(442, 334);
 			this->chart1->TabIndex = 31;
 			this->chart1->Text = L"chart1";
 			this->chart1->Click += gcnew System::EventHandler(this, &MyForm::chart1_Click_2);
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(350, 540);
-			this->textBox6->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6->Location = System::Drawing::Point(467, 664);
 			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(74, 20);
+			this->textBox6->Size = System::Drawing::Size(98, 22);
 			this->textBox6->TabIndex = 32;
 			this->textBox6->Text = L"0";
 			this->textBox6->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox6_TextChanged_1);
 			// 
 			// textBox7
 			// 
-			this->textBox7->Location = System::Drawing::Point(571, 295);
-			this->textBox7->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7->Location = System::Drawing::Point(761, 363);
 			this->textBox7->Name = L"textBox7";
-			this->textBox7->Size = System::Drawing::Size(90, 20);
+			this->textBox7->Size = System::Drawing::Size(118, 22);
 			this->textBox7->TabIndex = 33;
 			this->textBox7->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox7_TextChanged);
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(224, 540);
-			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label5->Location = System::Drawing::Point(298, 664);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(111, 13);
+			this->label5->Size = System::Drawing::Size(150, 17);
 			this->label5->TabIndex = 34;
-			this->label5->Text = L"РљРѕР»-РІРѕ РѕС‚СЂРµР·РєРѕРІ";
-			this->label5->Click += gcnew System::EventHandler(this, &MyForm::label5_Click_1);
+			this->label5->Text = L"Количество отрезков";
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1036, 591);
+			this->ClientSize = System::Drawing::Size(1382, 727);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->textBox7);
 			this->Controls->Add(this->textBox6);
@@ -551,6 +531,7 @@ namespace Graph {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->dataGridView1);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
 			this->Text = L"Random value modeling";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
@@ -625,14 +606,14 @@ namespace Graph {
 		 return res;
 	 }
 	
-	private: double searh_En(float& a, double& p)// ГЇГ®ГЁГ±ГЄ Г¬Г ГІ.Г®Г¦ГЁГ¤Г Г­ГЁГї
+	private: double searh_En(float& a, double& p)// поиск мат.ожидания
 	{
 		double En;
 		En = (-pow(2, 1.25)) / 5 - p / a * cosf(a * p) + sinf(a * p) / pow(a, 2);
 		return En;
 
 	}
-	private: double search_Dn(float& a, double& p)// ГЇГ®ГЁГ±ГЄ Г¤ГЁГ±ГЇГҐГ°Г±ГЁГЁ
+	private: double search_Dn(float& a, double& p)// поиск дисперсии
 	{
 		double Dn;
 		Dn = pow(2, 1.5) / 6 - pow(p, 2) * cosf(a * p) / a + 2 * p * sinf(a * p) / pow(a, 2) + 2 / pow(a, 3) * cosf(a * p) - 2 / pow(a, 3) - pow(searh_En(a, p), 2);
@@ -704,23 +685,24 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	PointPairList^ f2_list = gcnew ZedGraph::PointPairList();
 	float a = (float)(Convert::ToDouble(textBox2->Text));
 	int n = (Convert::ToDouble(textBox1->Text));
-	const int number_splits = 10;// Г·ГЁГ±Г«Г® Г°Г Г§ГЎГЁГҐГ­ГЁГ© 
+	const int number_splits = 10;// число разбиений 
 	double F = find_bor(a);
 	double Y;
 	this->textBox3->Text = Convert::ToString(F);
 	double  sum = 0;
-	double xq; // ГўГ»ГЎГ®Г°Г®Г·Г­Г®ГҐ Г±Г°ГҐГ¤Г­ГҐГҐ 
+	double xq; // выборочное среднее 
 	double* arr = new double[n];
 	 double temp;
-	double S; // ГўГ»ГЎГ®Г°Г®Г·Г­Г Гї Г¤ГЁГ±ГЇГҐГ°Г±ГЁГї 
-	double R;//Г°Г Г§Г¬Г Гµ ГўГ»ГЎГ®Г°ГЄГЁ 
-	double D = 0; // ГЊГҐГ°Г  Г°Г Г±ГµГ®Г¦Г¤ГҐГ­ГЁГї
+	double S; // выборочная дисперсия 
+	double R;//размах выборки 
+	double D = 0; // Мера расхождения
 	double max = 0;
 	int count = 0;
 	this->dataGridView1->ColumnCount = 3;
 	this->dataGridView1->RowCount = n;
 	v.push_back(-pow(2, 0.25));
-	double* yy=new double[n];
+
+	double* yy = new double[n];
 	for (int i = 0; i < n; i++)
 	{
 		yy[i] = rand_search();
@@ -732,11 +714,37 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	}
 	for (int i = 0; i < n; i++)
 	{
-		dataGridView1->Rows[i]->Cells[0]->Value = i+1;
+		dataGridView1->Rows[i]->Cells[0]->Value = i + 1;
 		arr[i] = get_continuous_value(yy[i], a);
-		sum += arr[i];	
+		sum += arr[i];
 	}
-
+	
+	/*for (int i = 0; i < n - 1; i++) {
+		for (int j = 0; j < n - i - 1; j++) {
+			if (arr[j] > arr[j + 1]) {
+				// меняем элементы местами
+				temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+		
+	}*/
+	
+	/*int i = 0;
+	int j = 1;
+	while (j - 1 < n / 100)
+	{
+		while (i  < 100*j)
+		{
+			dataGridView1->Rows[i]->Cells[1]->Value = arr[i];
+			i++;
+		}
+		j++;
+	}
+	*/
+	
+	
 	int i = 0;
 	while (i < n)
 	{
@@ -744,6 +752,29 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 		dataGridView1->Rows[i]->Cells[1]->Value = arr[i];
 		i++;
 	}
+	
+	
+	/*for (int i = 0; i < n; i++)
+	{
+		if (arr[i] <= 0)
+		{
+			max = fabs(1.0 / n * (i + 1) - 0.5 + pow(arr[i], 4) / 4);
+			if (max > D)
+			{
+				D = max;
+			}
+		}
+		else
+		{
+			max = fabs(1.0 / n * (i + 1) - 0.5 + 1 / a * (cosf(a * arr[i]) - 1));
+			if (max > D)
+			{
+				D = max;
+			}
+		}
+		
+	}
+	*/
 	for (double y = -pow(2, 0.25); y < find_bor(a); y += 0.01)
 	{
 		if ( y <= 0)
@@ -792,9 +823,9 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 
 	S = S / n; 
 	R = (double )dataGridView1->Rows[n-1]->Cells[1]->Value - (double) dataGridView1->Rows[1]->Cells[1]->Value;
-	double X = searh_En(a, F) - sum / n; // |En - x`| |Г¬Г ГІ. Г®Г¦ГЁГ¤Г Г­ГЁГҐ - ГўГ»Г®ГЎГ®Г°Г®Г·Г­Г®ГҐ Г±Г°ГҐГ¤Г­ГҐГҐ|
+	double X = searh_En(a, F) - sum / n; // |En - x`| |мат. ожидание - выоборочное среднее|
 	
-	double Me = 0; // ГўГ»ГЎГ®Г°Г®Г·Г­Г Гї Г¬ГҐГ¤ГЁГ Г­Г 
+	double Me = 0; // выборочная медиана
 	if (n % 2 == 1)
 	{
 		Me = arr[n / 2];
@@ -807,7 +838,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	this->dataGridView2->Rows[0]->Cells[1]->Value = xq;
 	this->dataGridView2->Rows[0]->Cells[2]->Value = fabsf(X);
 	this->dataGridView2->Rows[0]->Cells[3]->Value = search_Dn(a, F);
-	this->dataGridView2->Rows[0]->Cells[4]->Value = S; //ГўГ»ГЎГ®Г°Г®Г·Г­Г Гї Г¤ГЁГ±ГЇГҐГ°Г±ГЁГї
+	this->dataGridView2->Rows[0]->Cells[4]->Value = S; //выборочная дисперсия
 	this->dataGridView2->Rows[0]->Cells[5]->Value = fabs((double)this->dataGridView2->Rows[0]->Cells[3]->Value - (double)this->dataGridView2->Rows[0]->Cells[4]->Value);
 	this->dataGridView2->Rows[0]->Cells[6]->Value = Me;
 	this->dataGridView2->Rows[0]->Cells[7]->Value = R;
@@ -922,10 +953,6 @@ private: System::Void chart1_Click_2(System::Object^ sender, System::EventArgs^ 
 private: System::Void textBox6_TextChanged_1(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBox7_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label6_Click(System::Object^  sender, System::EventArgs^  e) {
-}
-private: System::Void label5_Click_1(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }
