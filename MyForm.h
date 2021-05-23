@@ -8,7 +8,6 @@
 #include <msclr\marshal_cppstd.h>
 
 std::vector<double> v;
-std::vector<double> v2;
 std::vector<double> generated_x;
 namespace Graph {
 
@@ -1204,16 +1203,16 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 			dataGridView3->Rows[3]->Cells[j]->Value = right - left;
 			dataGridView3->Rows[0]->Cells[j]->Value = Midle + left;
 			dataGridView3->Rows[1]->Cells[j]->Value =  search_f(Midle + left, a);
-			for (int i = 0; i < v2.size(); i++)
+			for (int i = 0; i < generated_x.size(); i++)
 			{
-				if (v2[i] > left && v2[i] <= right)
+				if (generated_x[i] > left && generated_x[i] <= right)
 				{
 					count++;
 				}
 			}
 			res = right - left;
-			dataGridView3->Rows[2]->Cells[j]->Value = (double)count/((double)v2.size()* (abs(res)));
-			chart1->Series[0]->Points->AddXY(Midle + left, (double)count / ((double)v2.size()  *(abs(res))));
+			dataGridView3->Rows[2]->Cells[j]->Value = (double)count / ((double)generated_x.size()* (abs(res)));
+			chart1->Series[0]->Points->AddXY(Midle + left, (double)count / ((double)generated_x.size()  *(abs(res))));
 			count = 0;
 			
 		}
