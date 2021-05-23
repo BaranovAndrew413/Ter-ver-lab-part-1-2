@@ -431,29 +431,21 @@ namespace Graph {
 			// 
 			// zedGraphControl1
 			// 
-			this->zedGraphControl1->Location = System::Drawing::Point(449, 325);
+			this->zedGraphControl1->Location = System::Drawing::Point(450, 350);
 			this->zedGraphControl1->Margin = System::Windows::Forms::Padding(4);
 			this->zedGraphControl1->Name = L"zedGraphControl1";
 			this->zedGraphControl1->ScrollGrace = 0;
-			this->zedGraphControl1->ScrollMaxX = 0;
+			this->zedGraphControl1->ScrollMaxX = 2;
 			this->zedGraphControl1->ScrollMaxY = 0;
 			this->zedGraphControl1->ScrollMaxY2 = 0;
-			this->zedGraphControl1->ScrollMinX = 0;
+			this->zedGraphControl1->ScrollMinX = -2;
 			this->zedGraphControl1->ScrollMinY = 0;
 			this->zedGraphControl1->ScrollMinY2 = 0;
 			this->zedGraphControl1->Size = System::Drawing::Size(565, 254);
 			this->zedGraphControl1->TabIndex = 20;
 			this->zedGraphControl1->Load += gcnew System::EventHandler(this, &MyForm::zedGraphControl1_Load);
 			// 
-			// button2
-			// 
-			this->button2->Location = System::Drawing::Point(859, 288);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(142, 29);
-			this->button2->TabIndex = 21;
-			this->button2->Text = L"Draw";
-			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click_1);
+			
 			// 
 			// label4
 			// 
@@ -607,7 +599,7 @@ namespace Graph {
 			// label11
 			// 
 			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(1034, 515);
+			this->label11->Location = System::Drawing::Point(1082, 469);
 			this->label11->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(27, 13);
@@ -617,7 +609,7 @@ namespace Graph {
 			// label12
 			// 
 			this->label12->AutoSize = true;
-			this->label12->Location = System::Drawing::Point(755, 515);
+			this->label12->Location = System::Drawing::Point(1100, 469);
 			this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(0, 13);
@@ -626,7 +618,7 @@ namespace Graph {
 			// label13
 			// 
 			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(1034, 558);
+			this->label13->Location = System::Drawing::Point(1073, 570);
 			this->label13->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(27, 13);
@@ -637,7 +629,7 @@ namespace Graph {
 			// label14
 			// 
 			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(755, 558);
+			this->label14->Location = System::Drawing::Point(1098, 570);
 			this->label14->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(0, 13);
@@ -685,7 +677,7 @@ namespace Graph {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1246, 591);
+			this->ClientSize = System::Drawing::Size(1315, 650);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->textBox6);
 			this->Controls->Add(this->chart1);
@@ -885,6 +877,8 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	this->dataGridView1->ColumnCount = 3;
 	this->dataGridView1->RowCount = n;
 	v.push_back(-pow(2, 0.25));
+	label10->Text = Convert::ToString(-pow(2, 0.25));
+	label9->Text = Convert::ToString(find_bor(a));
 
 	double* yy = new double[n];
 	for (int i = 0; i < n; i++)
@@ -932,7 +926,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	int i = 0;
 	while (i < n)
 	{
-		v2.push_back(arr[i]);
+		generated_x.push_back(arr[i]);
 		dataGridView1->Rows[i]->Cells[1]->Value = arr[i];
 		i++;
 	}
@@ -1122,6 +1116,8 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 					 }
 				 }
 			 }
+			 //3 часть
+
 			 // ni
 			 for (int i = 0; i < n_intervals; ++i)
 			 {
@@ -1159,7 +1155,6 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 
 
 			 // labele16->Text = ConvertToString(1 - F_xi(r0, n_intervals - 1));
-
 }
 private: System::Void textBox5_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
