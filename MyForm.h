@@ -1202,7 +1202,9 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 			left = v[j];
 			right = v[j + 1];
 			Midle = (right - left) / 2;
-			dataGridView3->Rows[3]->Cells[j]->Value = right - left;
+			
+			double t= (0.5 - (cosf((a * (j+1)) - 1)) / a) - (0.5 - (cosf((a * j) - 1)) / a);
+			dataGridView3->Rows[3]->Cells[j]->Value = abs(t);
 			dataGridView3->Rows[0]->Cells[j]->Value = Midle + left;
 			dataGridView3->Rows[1]->Cells[j]->Value =  search_f(Midle + left, a);
 			for (int i = 0; i < generated_x.size(); i++)
