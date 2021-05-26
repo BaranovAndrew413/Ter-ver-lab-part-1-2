@@ -123,13 +123,13 @@ namespace Graph {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea2 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->X = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->F_1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -187,40 +187,40 @@ namespace Graph {
 			// 
 			// dataGridView1
 			// 
-			dataGridViewCellStyle1->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle1->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle1->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle1->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle1->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(3) {
 				this->X, this->F_1,
 					this->F_2
 			});
-			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle2->BackColor = System::Drawing::SystemColors::Window;
-			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle5->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle5->BackColor = System::Drawing::SystemColors::Window;
+			dataGridViewCellStyle5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::ControlText;
-			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridView1->DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle5->ForeColor = System::Drawing::SystemColors::ControlText;
+			dataGridViewCellStyle5->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle5->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle5->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridView1->DefaultCellStyle = dataGridViewCellStyle5;
 			this->dataGridView1->Location = System::Drawing::Point(449, 11);
 			this->dataGridView1->Name = L"dataGridView1";
-			dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle3->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle6->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle3->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle3->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle3->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle6->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this->dataGridView1->RowHeadersVisible = false;
 			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->Size = System::Drawing::Size(228, 271);
@@ -342,12 +342,12 @@ namespace Graph {
 				this->Column2,
 					this->Column1, this->Column3, this->Column4, this->Column5, this->Column6, this->Column7, this->Column8, this->i, this->qi, this->ni
 			});
-			this->dataGridView2->Location = System::Drawing::Point(12, 325);
+			this->dataGridView2->Location = System::Drawing::Point(0, 327);
 			this->dataGridView2->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView2->Name = L"dataGridView2";
 			this->dataGridView2->RowHeadersWidth = 51;
 			this->dataGridView2->RowTemplate->Height = 24;
-			this->dataGridView2->Size = System::Drawing::Size(443, 112);
+			this->dataGridView2->Size = System::Drawing::Size(444, 91);
 			this->dataGridView2->TabIndex = 19;
 			this->dataGridView2->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView2_CellContentClick);
 			// 
@@ -446,7 +446,11 @@ namespace Graph {
 			// 
 			// button2
 			// 
-			
+			this->button2->Location = System::Drawing::Point(9, 599);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 44;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click_2);
 			// 
 			// label4
 			// 
@@ -485,6 +489,7 @@ namespace Graph {
 			this->label6->Size = System::Drawing::Size(95, 13);
 			this->label6->TabIndex = 26;
 			this->label6->Text = L"Границы отрезка";
+			this->label6->Click += gcnew System::EventHandler(this, &MyForm::label6_Click);
 			// 
 			// button3
 			// 
@@ -522,17 +527,17 @@ namespace Graph {
 			// 
 			// chart1
 			// 
-			chartArea1->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea1);
-			legend1->Name = L"Legend1";
-			this->chart1->Legends->Add(legend1);
+			chartArea2->Name = L"ChartArea1";
+			this->chart1->ChartAreas->Add(chartArea2);
+			legend2->Name = L"Legend1";
+			this->chart1->Legends->Add(legend2);
 			this->chart1->Location = System::Drawing::Point(682, 10);
 			this->chart1->Margin = System::Windows::Forms::Padding(2);
 			this->chart1->Name = L"chart1";
-			series1->ChartArea = L"ChartArea1";
-			series1->Legend = L"Legend1";
-			series1->Name = L"Series1";
-			this->chart1->Series->Add(series1);
+			series2->ChartArea = L"ChartArea1";
+			series2->Legend = L"Legend1";
+			series2->Name = L"Series1";
+			this->chart1->Series->Add(series2);
 			this->chart1->Size = System::Drawing::Size(332, 271);
 			this->chart1->TabIndex = 31;
 			this->chart1->Text = L"chart1";
@@ -685,7 +690,6 @@ namespace Graph {
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->dataGridView3);
 			this->Controls->Add(this->button3);
-			this->Controls->Add(this->label6);
 			this->Controls->Add(this->textBox5);
 			this->Controls->Add(this->textBox7);
 			this->Controls->Add(this->textBox8);
@@ -1001,6 +1005,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	}
 
 	S = S / n; 
+	
 	R = (double )dataGridView1->Rows[n-1]->Cells[1]->Value - (double) dataGridView1->Rows[1]->Cells[1]->Value;
 	double X = searh_En(a, F) - sum / n; // |En - x`| |мат. ожидание - выоборочное среднее|
 	
@@ -1085,12 +1090,19 @@ private: System::Void textBox7_TextChanged(System::Object^ sender, System::Event
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 			 std::string s = msclr::interop::marshal_as<std::string>(textBox6->Text);
 			 std::vector<double> bounders;
-			 int n = 1000;
-			 bounders.push_back(-pow(2, 0.25)); // add left bound
+			 double n=1000;
+			 bounders.push_back(-pow(2, 0.25));
+			 
+			// add left bound
 			 StringToDouble(bounders, s);
 			 float a = (float)(Convert::ToDouble(textBox2->Text));
-			 bounders.push_back(find_bor(a));  // add right bound
-			 size_t n_intervals = bounders.size() - 1;
+			 bounders.push_back(0.32);
+	
+			 bounders.push_back(find_bor(a));
+
+			 // add right bound
+			 
+			 size_t n_intervals = bounders.size() -1;
 
 			 double alpha = Convert::ToDouble(textBox5->Text); // need for comparison with F^(R0)!
 			 this->dataGridView2->ColumnCount = 3;
@@ -1193,6 +1205,7 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	dataGridView3->Rows[1]->HeaderCell->Value = "fn(zj)";
 	dataGridView3->Rows[2]->HeaderCell->Value = "nj/(n|deltaj|";
 	dataGridView3->Rows[3]->HeaderCell->Value = "|deltaj|";
+	
 	for (int i = 1; i <= v.size() - 1; i++)
 	{
 		dataGridView3->Columns[i]->HeaderText = Convert::ToString(i);
@@ -1206,7 +1219,8 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 			double t2 = 0.5 - (cosf(a * j) - 1) / a;
 			
 			double t= t1-t2;
-			dataGridView3->Rows[3]->Cells[j]->Value = abs(t);
+			dataGridView3->Rows[3]->Cells[j]->Value = right- left;
+			
 			dataGridView3->Rows[0]->Cells[j]->Value = Midle + left;
 			dataGridView3->Rows[1]->Cells[j]->Value =  search_f(Midle + left, a);
 			for (int i = 0; i < generated_x.size(); i++)
@@ -1277,5 +1291,9 @@ private: System::Void label8_Click(System::Object^  sender, System::EventArgs^  
 private: System::Void textBox7_TextChanged_1(System::Object^ sender, System::EventArgs^ e) {
 		 }
 
+private: System::Void label6_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void button2_Click_2(System::Object^  sender, System::EventArgs^  e) {
+}
 };
 }
